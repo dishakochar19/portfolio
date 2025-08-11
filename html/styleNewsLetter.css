@@ -1,0 +1,205 @@
+.mainBody {
+    width: 600px;
+    margin: auto;
+
+    /* --------------------Common Classes----------------- */
+    .subParent {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 999px;
+        background: #33aa00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 44px;
+        position: relative;
+
+        span {
+            position: relative;
+            top: -11px;
+
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+
+    /* --------------------Logo----------------- */
+    .logo {
+        h1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    /* --------------------Top Title Section----------------- */
+    .topTitleSection {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        .img {
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        .titleLg {
+            h1 {
+                margin-left: 20px;
+            }
+
+            h2 {
+                background: #33aa00;
+                margin: auto;
+                padding: 13px 231px 13px 20px;
+                margin-bottom: revert-layer;
+            }
+        }
+    }
+
+    /* --------------------Mid Title Section----------------- */
+    .midTitleSection {
+
+        .title {
+            padding: 5px 23px 5px 63px;
+            background: #33aa00;
+
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .triangleBar {
+            position: relative;
+            margin-top: 8px;
+
+            .triangleUp {
+                position: absolute;
+                bottom: 0;
+                left: 20px;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid #33aa00;
+                transform: rotate(360deg);
+            }
+
+            .line {
+                height: 3px;
+                background: #33aa00;
+            }
+        }
+
+
+    }
+
+    /* --------------------Main Section----------------- */
+    .bg {
+        background: #dadada;
+        padding: 20px;
+
+        .quesBar {
+            display: flex;
+
+            h2 {
+                background: #33aa00;
+                font-size: 28px;
+                margin: 0;
+                padding: 1px;
+            }
+        }
+
+        .txt {
+            font-size: 15px;
+        }
+
+        .joinLeaveTitle {
+            display: flex;
+            margin-top: 50px;
+
+            h2 {
+                background: #33aa00;
+                font-size: 28px;
+                margin: 0;
+                padding: 1px;
+            }
+        }
+
+        .hiBieSection {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+
+            .join {
+                h2 {
+                    background: #33aa00;
+                    display: inline-block;
+                }
+            }
+
+            .img {
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+        }
+
+        .metricUpdates {
+            display: flex;
+            margin-top: 30px;
+
+            h2 {
+                background: #33aa00;
+                padding: 0 0 0 4px;
+                font-size: 28px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .optional {
+                background: #ffff00;
+                font-size: 32px;
+            }
+        }
+    }
+
+    .divider {
+        margin-top: 10px;
+    }
+
+    /* --------------------Footer----------------- */
+    .footer {
+        background: #070775;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 20px;
+        padding: 10px;
+        margin-top: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        p {
+            font-size: 15px;
+
+            a {
+                /* display: block; */
+                text-decoration: none;
+                color: #ff00ff;
+            }
+        }
+    }
+}

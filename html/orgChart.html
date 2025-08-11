@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Organizational Chart</title>
+    <link rel="stylesheet" href="styleOrgChart.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="org-chart">
+      <ul>
+        <li>
+          <div class="box">
+            <div class="title">Camille Denis</div>
+            <div class="subtitle">
+              Global Head of Business Intelligence & Effectiveness
+            </div>
+          </div>
+          <ul>
+            <li>
+              <div class="box">
+                <div class="title">Andrew Read</div>
+                <div class="subtitle">
+                  Global Strategic Market Intelligence Director
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Tinne Van Rompaey</div>
+                    <div class="subtitle">Global Insights Product Lead</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Tinne Van Rompaey</div>
+                    <div class="subtitle">Global Insights Product Lead</div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="box">
+                <div class="title">Vaida Baikute Pardo Orella</div>
+                <div class="subtitle">Global Reporting Optimization Lead</div>
+              </div>
+              <ul>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Pawel Jakubowski</div>
+                    <div class="subtitle">
+                      Global Performance Reporting Lead
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Olena Sandul</div>
+                    <div class="subtitle">Global Market Data Lead</div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="box">
+                <div class="title">John O'Connor</div>
+                <div class="subtitle">
+                  Global Marketing Effectiveness Analytics Innovation Director
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Ammar Basit</div>
+                    <div class="subtitle">
+                      Global Marketing Effectiveness Analytics Lead
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Filina Spanodimou</div>
+                    <div class="subtitle">
+                      Advanced Analytics MMM Programme Lead
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="box">
+                <div class="title">Sabine Scholl</div>
+                <div class="subtitle">
+                  Global Brand Equity & Creative Effectiveness Innovation
+                  Director
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Erkan Balkan</div>
+                    <div class="subtitle">
+                      Global Brand Equity & Creative Effectiveness Innovation
+                      Lead
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="box">
+                <div class="title">Phil Jackson</div>
+                <div class="subtitle">
+                  Global Digital Marketing Effectiveness Innovation Director
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <div class="sub-box box">
+                    <div class="title">Rachel Bowen-Thomas</div>
+                    <div class="subtitle">
+                      Global Digital Marketing Effectiveness Lead
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="box">
+                <div class="title">Sorabh Kalra</div>
+                <div class="subtitle">Global KC CBIA Lead</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script>
+      $(document).ready(function () {
+        function addPerson(parentSelector, name, title, imageUrl) {
+          const $parent = $(parentSelector).find("> .children");
+
+          if ($parent.length) {
+            $parent.append(node);
+          } else {
+            $(parentSelector).append(`<div class="children">${node}</div>`);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

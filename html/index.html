@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script>
+      // Even & Odd
+      let num = 25;
+
+      if (num % 2 === 0) {
+        console.log(num, "is Even");
+      } else {
+        console.log(num, "is Odd");
+      }
+    </script>
+
+    <script>
+      // Voting Age criteria
+      let age = 18;
+
+      if (age >= 18) {
+        console.log("You are eligble to vote");
+      } else {
+        console.log("You are not eligble to vote");
+      }
+    </script>
+
+    <script>
+      // comparing 2 numbrs
+      let a = 5,
+        b = 6;
+
+      if (a > b) {
+        console.log("A is greater than B");
+      } else if (a < b) {
+        console.log("B is greater than A");
+      } else {
+        console.log("They both are equal");
+      }
+    </script>
+
+    <script>
+      //Calculator
+      let num1 = 23,
+        num2 = 10;
+      operator = "*";
+
+      if (operator === "+") {
+        console.log(num1 + num2);
+      } else if (operator === "-") {
+        console.log(num1 - num2);
+      } else if (operator === "*") {
+        console.log(num1 * num2);
+      } else if (operator === "/") {
+        console.log(num1 / num2);
+      } else {
+        console.log("Invalid Operator");
+      }
+    </script>
+
+    <script>
+      let divisibleNum = 15;
+
+      if (divisibleNum % 3 === 0 && divisibleNum % 5 === 0) {
+        console.log(divisibleNum, "Divisible by both 3 & 5");
+      } else {
+        console.log(divisibleNum, "Not divisble by both");
+      }
+    </script>
+
+    <script>
+      // Grading System
+      let marks = 35;
+
+      if (marks >= 90 && marks <= 100) {
+        console.log("Acccording to your marks your grade will be A");
+      } else if (marks >= 75) {
+        console.log("Acccording to your marks your grade will be B");
+      } else if (marks >= 50) {
+        console.log("Acccording to your marks your grade will be C");
+      } else if (marks >= 35) {
+        console.log("Acccording to your marks your grade will be D");
+      } else {
+        console.log("Fail");
+      }
+    </script>
+
+    <script>
+      // Check Leap Year
+
+      let year = 2025;
+
+      if (year % 4 === 365) {
+        console.log(year, "is not the leap Year");
+      } else {
+        console.log(year, "is the leap Year");
+      }
+    </script>
+
+    <script>
+      // Max of three numrs
+      let x = 1200,
+        y = 300,
+        z = 23;
+
+      if (x > y && x > z) {
+        console.log("X is greatest");
+      } else if (y > z) {
+        console.log("Y is greatest");
+      } else {
+        console.log("Z is greatest");
+      }
+    </script>
+
+    <script>
+      // Positive, Negative, or Zero
+      let intgr = 0.2;
+
+      if (intgr > 0) {
+        console.log("Positive");
+      } else if (intgr < 0) {
+        console.log("Negative");
+      } else {
+        console.log("Zero");
+      }
+    </script>
+
+    <script>
+      // Triangle Validity Checker
+      let angle1 = 60;
+      angle2 = 30;
+      angle3 = 90;
+
+      if (angle1 + angle2 + angle3 === 180) {
+        console.log("Valid triangle");
+      } else {
+        console.log("Invalid Traingle");
+      }
+    </script>
+
+    <script>
+      // Username and password validation
+
+      let username = "admin";
+      let password = 1234;
+
+      if (username === "admin" && password === 1234) {
+        console.log("Login Successfull");
+      } else {
+        console.log("Login Failed");
+      }
+    </script>
+
+    <script>
+      // Check Character Type Input a single character and check if it is: a letter a digit a special symbol
+      let alpha = "letter";
+      let digit = 56;
+      let symbol = "specialCharac";
+    </script>
+
+    <script>
+      let amount = 3000;
+
+      if (amount > 5000) {
+        console.log("20% Discount");
+      } else if (amount > 2000) {
+        console.log("10% Discount");
+      } else {
+        console.log("No Discount");
+      }
+    </script>
+
+    <script>
+      //Eligibility for Scholarship
+
+      let classMark = 100;
+      let income = 10000;
+
+      if (classMark >= 85 && income < 500000) {
+        console.log("You are eligible");
+      } else {
+        console.log("You are not eligible");
+      }
+    </script>
+
+    <script>
+      // Calculate sum of 1 to 10
+
+      let sum = 0;
+
+      for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
+      }
+      console.log("sum =", sum);
+    </script>
+
+    <script>
+      // Print numbers from 1 to 10
+      for (i = 1; i <= 10; i++) {
+        console.log("i =", i);
+      }
+    </script>
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        console.log("i = ", i);
+      }
+    </script>
+
+    <script>
+      // Print even numbers from 1 to 20
+
+      for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+          console.log("i=", i);
+        }
+      }
+    </script>
+
+    <script>
+      let fruits = ["apple", "mango", "banana"];
+
+      for (let i of fruits) {
+        console.log("i=", i);
+      }
+    </script>
+
+    <script>
+      let number = [10, 20, 30, 40];
+      let sums = 0;
+
+      for (let i of number) {
+        sums = sums + i;
+      }
+      console.log("Sum of total number:", sums);
+    </script>
+
+    <script>
+      // All even nos from 0 to 10
+
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 === 0) {
+          console.log("Even nos from 1 to 10:", i);
+        }
+      }
+    </script>
+    <script>
+      //All odd nos from 0 to 10
+
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 !== 0) {
+          console.log("Odd nos from 1 to 10:", i);
+        }
+      }
+    </script>
+
+    <script>
+      // All nos from 0 - 10
+
+      for (let count = 0; count <= 10; count++) {
+        console.log("count=", count);
+      }
+    </script>
+
+    <!-- <script>
+      // Guess the game number
+
+      let gamNum = 25;
+
+      let userNum = prompt("Guess the Game Number: ");
+
+      while (userNum != gamNum) {
+        userNum = prompt("You entered wrong Game Number. Guess again! : ");
+      }
+      console.log("Congratualations! you have entered the right number");
+    </script> -->
+
+    <script>
+      // Use of BackTicks (``)
+
+      let obj = {
+        item: "pen",
+        price: 10,
+      };
+      let output = `The cost of a ${obj.item} is ${obj.price}`;
+      // console.log("The cost of a", obj.item, "is"'', obj.price);
+
+      let specialString = `This is a template literal ${1 + 2 + 3}`;
+      console.log(specialString);
+    </script>
+
+    <script>
+      // Upper Case
+
+      let str = "Deepanshi Kochar";
+      str = str.toUpperCase();
+      console.log(str);
+    </script>
+
+    <script>
+      let fullName = prompt("Enter your full name without spaces");
+      let adminName = "@" + fullName + fullName.length;
+
+      console.log(adminName);
+    </script>
+  </body>
+</html>

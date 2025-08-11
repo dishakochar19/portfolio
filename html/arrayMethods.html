@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["Apple", "Banana", "Cherry"];
+
+      let firstLetter = fruits.map((fruit, i) => {
+        let updatedLetter = fruit.charAt(0);
+        console.log(updatedLetter);
+        return updatedLetter;
+      });
+      console.log("final Results are", firstLetter);
+    </script>
+
+    <script>
+      let vegetables = ["carrot", "potato", "onion"];
+
+      let capitalized = vegetables.map((veggie) => {
+        let emoji = "";
+
+        if (veggie === "carrot") {
+          emoji = " 🥕";
+        }
+        if (veggie === "Potato") {
+          emoji = " 🥔";
+        }
+        if (veggie === "onion") {
+          emoji = " 🧅";
+        }
+
+        let capital = veggie.toUpperCase() + emoji;
+        console.log("After name is:", capital);
+        return capital;
+      });
+      console.log("Finaal Result is:", capitalized);
+    </script>
+
+    <script>
+      let names = ["Disha", "Saisha", "Mayra"];
+      let sentences = names.map((name) => {
+        let sentence = `Hi my name is ${name}`;
+        console.log(sentence);
+        return sentence;
+      });
+      console.log("Final Result is:", sentences);
+    </script>
+
+    <script>
+      let books = ["Ramayana", "Mahabharat", "Vedas"];
+
+      let numberedBooks = books.map((book, i) => {
+        let result = i + 1 + "." + book;
+        console.log("Final result is:", result);
+      });
+    </script>
+
+    <script>
+      let numbers = ["9876543210", "9123456789"];
+
+      let formatted = numbers.map((num) => {
+        return `+91-${num}`;
+      });
+      console.log("Formatted number is:", formatted);
+    </script>
+
+    <script>
+      let titles = [
+        "Introduction to JS",
+        "Advanced React Course",
+        "Frontend Developer Roadmap",
+      ];
+
+      let shortened = titles.map((title) => {
+        return title.slice(0, 6) + "...";
+      });
+      console.log(shortened);
+    </script>
+
+    <script>
+      let students = [
+        { name: "Disha", marks: 95 },
+        { name: "Saisha", marks: 88 },
+        { name: "Mayra", marks: 91 },
+      ];
+      let updated = students.map((student) => {
+        return (
+          `${student.name}` +
+          " " +
+          "scored" +
+          " " +
+          " " +
+          `${student.marks}` +
+          " " +
+          "marks"
+        );
+      });
+      console.log("Result is:", updated);
+    </script>
+
+    <script>
+      let number = [10, 20, 30, 40, 50, 60];
+      let slice = number.slice(3, 6);
+      console.log("Result is:", slice);
+    </script>
+
+    <script>
+      let fruit = ["apple", "banana", "cherry", "date"];
+      let splice = fruit.splice(0, 2);
+      console.log("Result is:", splice);
+    </script>
+
+    <script>
+      let animals = ["cat", "dog", "elephant"];
+      let upper = animals.map((animal) => animal.toUpperCase());
+      console.log(upper);
+    </script>
+
+    <script>
+      let marks = [45, 76, 89, 30];
+
+      let passsed = marks.filter((mark) => mark > 70);
+      console.log(passsed);
+    </script>
+
+    <script>
+      let nos = [5, 7, 8, 10];
+      let even = nos.find((n) => n % 2 === 0);
+      console.log(even);
+    </script>
+
+    <!-- <script>
+      let arr = [1, 2, 3, 4, 5];
+      let a = prompt("Enter a number");
+      a = Number.parseInt(a);
+      arr.push(a);
+      console.log(arr);
+    </script> -->
+
+    <script>
+      let nam = [
+        "Disha",
+        "Tanvi",
+        "Saisha",
+        "Mayra",
+        "anil",
+        "chetan",
+        "deepika",
+        "usha",
+      ];
+      nam.forEach((name, i) => {
+        if (i % 2 === 0) {
+          console.log(name + "✅");
+        } else {
+          console.log(name);
+        }
+      });
+    </script>
+
+    <script>
+      let classStudents = [
+        ["Disha", "Tanvi"],
+        ["Mayra", "Saisha", "samay", "samarth", "serane"],
+      ];
+      students.forEach((name, i) => {
+        if (name.startWith("S")) {
+          classStudents++;
+        }
+      });
+      console.log("Total names which starts with S are:", classStudents);
+    </script>
+
+    <script>
+      let subjects = ["History", , "Science", "Maths", "", "English"];
+
+      subjects.forEach((book) => {
+        if (book) {
+          console.log(`Book:${book} 📚`);
+        }
+      });
+    </script>
+
+    <script>
+      let formFields = ["Disha", "Kochar", "", "disha@example.com"];
+
+      let emptyFields = formFields.some((field) => field.trim() === "");
+      if (emptyFields) {
+        console.log("Some fields are empty");
+      } else {
+        console.log("All fields are filled");
+      }
+    </script>
+  </body>
+</html>

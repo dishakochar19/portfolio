@@ -1,0 +1,141 @@
+.mainBody {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    width: auto;
+
+    .barsHeader {
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+        margin-bottom: 50px;
+
+        .title {
+            width: 180px;
+            text-align: center;
+        }
+    }
+
+
+    .dashboard {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .circleWrapper {
+        --percent: 30;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 999px;
+        background: conic-gradient(var(--circle-color, #3fcf3f) calc(var(--percent) * 1%),
+                #2f91d3 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .inside {
+        width: 85px;
+        height: 85px;
+        background-color: #000;
+        /*  inside the circle */
+        border-radius: 999px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .value {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .change {
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+            color: #ccc;
+        }
+    }
+
+    .card {
+        text-align: center;
+
+        .barchart {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100px;
+            gap: 30px;
+
+            .bar {
+                width: 40px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                color: #fff;
+                font-size: 12px;
+            }
+
+            .bar span {
+                position: absolute;
+                top: -20px;
+            }
+
+            .haleon {
+                background-color: #3fcf3f;
+                height: 35%
+            }
+
+            .market {
+                background-color: #2f91d3;
+                height: 38%
+            }
+        }
+    }
+
+    .barChartDots {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+    }
+
+    .green-dot {
+        background-color: #3fcf3f;
+    }
+
+    .blue-dot {
+        background-color: #2f91d3;
+    }
+
+    .prcnt16 {
+        --circle-color: #3fcf3f;
+        height: 38%;
+        --percent: 15.3;
+    }
+
+    .prcnt57 {
+        --percent: 57;
+        --circle-color: #3fcf3f;
+        height: 38%;
+    }
+}
