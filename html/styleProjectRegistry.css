@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+}
+
+.banner .col-md-8,
+.banner .col-md-4 {
+    font-family: arial;
+}
+
+.banner .leftSection h1 {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.banner .leftSection .btmBdr {
+    border-bottom: 4px solid #adadad;
+    width: 400px;
+}
+
+.banner .leftSection p {
+    margin: 0px;
+}
+
+.banner .leftSection .highlight {
+    background: #000;
+    color: #fff;
+    padding: 2px 6px;
+}
+
+.banner .rightSection img {
+    height: 187px;
+    object-fit: cover;
+    position: absolute;
+    left: 75%;
+}
+
+.banner .leftStrip,
+.banner .rightStrip {
+    margin: 0;
+    padding: 0;
+}
+
+.leftDivider {
+    height: 40px;
+    background: #2ecc71;
+    margin: 16px 0;
+}
+
+.rightDivider {
+    height: 40px;
+    background: #2ecc71;
+    margin: -24px 0;
+}
+
+/* ---------------------Common Classes--------------------- */
+
+.mainContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.mBtm15 {
+    margin-bottom: 15px;
+}
+
+.mTop40 {
+    margin-top: 40px;
+}
+
+.mTop10 {
+    margin-top: 10px;
+}
+
+.mTop20 {
+    margin-top: 20px;
+}
+
+.pad20 {
+    padding: 20px;
+}
+
+.pTop20px {
+    padding-top: 20px;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.greyBackground {
+    background-color: #e6e6f8;
+}
+
+.darkGreyBackground {
+    background-color: #9ccfe4;
+}
+
+.txtColorGrey {
+    color: #adadad;
+}
+
+button {
+    display: flex;
+    gap: 10px;
+    float: right;
+    background-color: #000;
+    padding: 3px 15px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.greenStrip {
+    border: 1.5px solid #2ecc71;
+    width: 100%;
+}
+
+.projectDetails {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.projectDetails .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 999px;
+    font-size: 33px;
+}
+
+/* ---------------------Main Heading--------------------- */
+.titleDetails {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.titleDetails h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+}
+
+.titleDetails span {
+    background-color: #2ecc71;
+    font-size: 24px;
+    border-radius: 999px;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    min-width: 40px;
+}
+
+.divider {
+    border-bottom: 2px solid #000;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.dashBoardSection .titleBackground {
+    background-color: #e9edff;
+    padding: 15px;
+    border-bottom: 3px solid #2ecc71;
+}
+
+.projectsInfo .sorting {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.projectsInfo .sorting span {
+    margin-left: auto;
+}
+
+.projectsInfo .sorting select {
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+.projectsInfo nav ol a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.projectsInfo nav ol p {
+    margin: 0;
+    padding: 0;
+}
+
+.projectsInfo nav ol li {
+    border-bottom: 2px dotted #000;
+    line-height: 28px;
+}
+
+.projectsInfo nav ol li:last-child {
+    border-bottom: none !important;
+}
+
+.leftBar .projectsInfo nav ol li:last-child,
+.rightBar .projectsInfo nav ol a:last-child li {
+    border-bottom: none !important;
+}
+
+.projectsInfo nav ol .statusBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectsInfo nav ol li .inProgress {
+    background-color: #ffff00;
+    padding: 1px 12px;
+    border-radius: 6px;
+}
+
+.projectsInfo nav ol li .delayed {
+    background-color: #ffc0cb;
+    padding: 1px 12px;
+    border-radius: 6px;
+}
+
+.cardTitle h4 {
+    font-size: 21px;
+}
