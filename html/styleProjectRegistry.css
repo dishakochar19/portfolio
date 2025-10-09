@@ -24,7 +24,7 @@ body {
 .banner .leftSection .highlight {
     background: #000;
     color: #fff;
-    padding: 2px 6px;
+    padding: 5px 8px;
 }
 
 .banner .rightSection img {
@@ -59,8 +59,8 @@ body {
     margin: 0 auto;
 }
 
-.mBtm15 {
-    margin-bottom: 15px;
+.mBtm10 {
+    margin-bottom: 10px;
 }
 
 .mTop40 {
@@ -120,16 +120,28 @@ button {
     align-items: center;
 }
 
+.projectDetails h4 {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.projectDetails h5 {
+    margin: 0;
+    padding: 0;
+}
+
 .projectDetails .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     color: #fff;
     background-color: #000;
     border-radius: 999px;
-    font-size: 33px;
+    font-size: 27px;
+    min-width: 45px;
 }
 
 /* ---------------------Main Heading--------------------- */
@@ -149,12 +161,16 @@ button {
     background-color: #2ecc71;
     font-size: 24px;
     border-radius: 999px;
-    margin-right: 8px;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     min-width: 40px;
+}
+
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .divider {
@@ -184,29 +200,31 @@ button {
     padding: 5px 15px;
 }
 
-.projectsInfo nav ol a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-}
-
-.projectsInfo nav ol p {
+.projectsInfo nav ol {
     margin: 0;
-    padding: 0;
 }
 
 .projectsInfo nav ol li {
     border-bottom: 2px dotted #000;
-    line-height: 28px;
+    line-height: 25px;
+    padding: 0 0 15px 0;
 }
+
+.projectsInfo nav ol li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.2s;
+}
+
+.projectsInfo nav ol li a p {
+    margin: 0;
+    padding: 0;
+}
+
 
 .projectsInfo nav ol li:last-child {
-    border-bottom: none !important;
-}
-
-.leftBar .projectsInfo nav ol li:last-child,
-.rightBar .projectsInfo nav ol a:last-child li {
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
 .projectsInfo nav ol .statusBar {
@@ -227,6 +245,12 @@ button {
     border-radius: 6px;
 }
 
+.cardTitle {
+    padding: 0 0 15px 0;
+}
+
 .cardTitle h4 {
     font-size: 21px;
+    margin: 0;
+    margin-bottom: 15px;
 }
